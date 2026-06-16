@@ -1,0 +1,115 @@
+/* Configurações Globais / Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Estrutura do Cabeçalho */
+.header-container {
+    background-color: #1a1a2e; /* Azul escuro tecnológico */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Garante que quebre linha em telas muito pequenas */
+    gap: 20px;
+}
+
+/* Estilização do Título */
+.logo-title {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo-title span {
+    color: #00adb5; /* Tom de ciano para destacar o IFA */
+}
+
+/* Menu e Botões de Encaminhamento */
+.nav-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Cores específicas para cada matéria (estilo identidade visual) */
+.btn-prog {
+    background-color: transparent;
+    color: #00adb5;
+    border: 2px solid #00adb5;
+}
+
+.btn-prog:hover {
+    background-color: #00adb5;
+    color: #1a1a2e;
+    box-shadow: 0 0 10px rgba(0, 173, 181, 0.5);
+}
+
+.btn-robo {
+    background-color: transparent;
+    color: #ff5722; /* Laranja robótica/industrial */
+    border: 2px solid #ff5722;
+}
+
+.btn-robo:hover {
+    background-color: #ff5722;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 87, 34, 0.5);
+}
+
+.btn-fisica {
+    background-color: transparent;
+    color: #e23e57; /* Rosa/Vermelho tecnológico para física */
+    border: 2px solid #e23e57;
+}
+
+.btn-fisica:hover {
+    background-color: #e23e57;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(226, 62, 87, 0.5);
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .nav-btn {
+        width: 100%; /* Botões ocupam a largura total no celular */
+    }
+}
