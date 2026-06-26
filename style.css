@@ -113,3 +113,9 @@ body {
         width: 100%; /* Botões ocupam a largura total no celular */
     }
 }
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
